@@ -1,0 +1,2 @@
+build/ //saying to git to ignore anything listed in this file, so it wont get added and committed to the repo, used for ignoring depending on language, here we want to ignore executable
+
