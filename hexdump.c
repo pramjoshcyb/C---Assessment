@@ -2,7 +2,6 @@
 #include <ctype.h>
 
 //THIS IS THE FIRST APP IN HEXDUMP 
-//courtesy of Preet Ji 
 const int ROWS = 24;
 const int COLUMNS = 16;
 
@@ -12,7 +11,7 @@ int main(int argc, char const *argv[]){
     FILE *target_file = fopen(argv[1], "r"); //open a file and read and close from it, using argv because 
 
     // create somewhere to store file contents 
-    char buffer[16];
+    char buffer[ROWS][COLUMNS];
 
     //read into buffer from file 
     fread(buffer, 1, COLUMNS, target_file); //passes in an argument, need to put 1 for the size for alignment with the end of the file size_t 
