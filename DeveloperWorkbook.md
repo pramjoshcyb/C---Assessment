@@ -13,9 +13,12 @@ Q2 **Describe** medium-size application development in detail with regard to (10
 - the use of header files in C
 - the use of C libraries
 
-A medium size application development source code can be divided into multiple files to avoid confusion and make the code easier to read or make it more maintainable. 
-The use of header files in C like #include <stdio.h> allows the developer to access various libraries in the C language. Function prototypes include
-The use of C libraries when developing a medium size app include libraries like standard libraries, math libraries, graphic libraries and crypto libraries. They allow code to be reused in different applications. They contain 3rd party software.
+A medium size application development source code can be divided into multiple files to avoid confusion and make the code easier to read or make it more maintainable. If every file relates to a certain topic, developers would know exactly where to look. Each individual file is easy to track because the overall program has been split into various files. The benefit of dividing the source code into multiple files is also so that the files can be moved as a whole instead of copying and pasting. 
+
+The use of header files in C like #include <stdio.h> allows the developer to access various libraries in the C language. In C programs it keeps all the constants and global variables and the function prototypes in the header files and includes that header file when its needed. Header files are needed because the code has to know the contents of the prebuilt libraries and the built binary of a specific project needs to know the contents of the prebuilt libraries. Firstly, the code will not pay attention to how the libraries are put together, it extracts the function prototypes and puts them into a separate file which is called the header. Once the header file is needed for the program, the code will automatically realise that ie needs to utilise the system library. Primary use of header files is to import functionalities from different libraries. 
+
+The use of C libraries when developing a medium size app include libraries like standard libraries, math libraries, graphic libraries and crypto libraries. They allow code to be reused in different applications and they contain 3rd party software. Basically a libary in the C language is a collection of functions and declarations which is revealed for usage by other programs. It consists of an interface which is saved as a .h file and the implementation which ends in a .c file. The C standard library is a reference for coding in C to assist programmers in their projects. The C math library contains different mathematical functions which takes double as an argument and returns double as the result. Basically the C libraries are included because they function and assist in writing code that has many uses, a dedicated collection of developers are constantly making them better.
+It saves writing out general functions like print to screen, calculating addition or square root because the libraries have already created them. It saves time, effort and makes the programe expandable because with the world constantly changing the application is expected to work everywhere so the library functions help because they perform the same thing on each computer.  
 
 
 
@@ -52,10 +55,16 @@ A structure is a user defined data type in the C language. A user defined struct
 Q6 **Describe** TWO development methodologies appropriate for the development of small tools such as the ones implemented in this assessment task. (100 - 150 words)
 
 Two development methodologies appropriate for the development of small tools are Agile and Waterfall.
-Agile 
+Agile software development methodology refers to a group of software development methodologies which is established iteratively. The Agile methodology includes consultation with the customer/product owner where the team splits the work to be accomplished into increments called user stories and each user story is expected to contribute to the value of the final product. It also allows for daily meeting each day at the same time, the overall team conducts a meeting to get everyone upto date on the information that is important for coordination. 
+
+The waterfall methodology is normal process which is a linear approach to software development. This methodology includes a sequence of events consisting of gathering and documenting requirements, design, coding and unit test, perform system testing, perform user acceptance testing, fix and issues and deliver the finished product. Each of these signifies a stage of software development and each stage normally finishes before the next one can be initiated.  
+
+Agile can be used in the C applications that we have developed by consulting with the instructors regarding the code that we have been working on so that we can fix or improve or get help on specific parts of the code. 
+
+Waterfall methodology can be used in the C applications that we have developed by gathering the documentation in our case its the instructions that we have been given to build the program from scratch and then we were able to code and fix issues that we had along the way. 
 
 
 Q7 **Outline** the development of the C language, making reference to the types of software C is intended for.
 (150 - 250 words)
 
- FOCUS ON: types of software c is used for, talk about the type of language that C is (family of langauges it belongs to), 
+ The C language is a general purpose, high level language that was created by Dennis M. Ritchie who developed the UNIX Operating System at Bell Labs. The types of software the C language is used for is both low machine level languages and high level developer friendly languages. It is extremely fast and has a valuable library. C language has been important in developing many Operating systems like Unix-Kernel, Microsoft Windows utilities and a broad segment of Android OS. C language inserts algorithms and data structures easily and assists in faster computations in programs. MATLAB and Mathematica have been assisted by C. C has many family programming languages including the most popular language called C++ which is an extension of the C language and is considered to be an intermediate language because it encapsulates high and low level language features. Another one is called Ch which is a C or C++ scripting language that has extensions for shell programming and numerical computing. C is also a compiled language and it is statically typed because the variable is known at compile time. 
